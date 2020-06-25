@@ -9,10 +9,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "DynamicFramework",
-            targets: ["DynamicFramework"]),
-        .library(
-            name: "StaticLibrary",
-            targets: ["StaticLibrary"]),
+            targets: ["DynamicFramework"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,12 +21,7 @@ let package = Package(
         .binaryTarget(
             name: "DynamicFramework",
             url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/Archive.zip",
-            checksum: "721ec54e6d61681286039afc28e098ce7be20e9d41e26e7a07e627856f808352"
-        ),
-        .binaryTarget(
-                   name: "StaticLibrary",
-                   url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/Archive.zip",
-                   checksum: "721ec54e6d61681286039afc28e098ce7be20e9d41e26e7a07e627856f808352"
-               )
+            checksum: "75282c0c9da28625f02da71bbce20bae8090a70d717418c478932e56b37f0e7e"
+        )
     ]
 )
