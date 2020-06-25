@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .binaryTarget(
             name: "DynamicFramework",
-            url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/Archive.zip",
+            url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/DynamicFramework.xcframework.zip",
             checksum: "75282c0c9da28625f02da71bbce20bae8090a70d717418c478932e56b37f0e7e"
         )
     ]
