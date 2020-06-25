@@ -8,8 +8,11 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "spmbinary",
-            targets: ["spmbinary"]),
+            name: "DynamicFramework",
+            targets: ["DynamicFramework"]),
+        .library(
+            name: "StaticLibrary",
+            targets: ["StaticLibrary"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,9 +22,14 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .binaryTarget(
-            name: "spmbinary",
-            url: "https://github.com/Adobe-Marketing-Cloud/mobile-services/releases/download/v4.19.2-iOS/AdobeMobileLibrary-4.19.2-iOS.zip",
-            checksum: "18646a58df3726129844265944f38963cd1ef6056b97d178c5f2694ce9cd134f"
-        )
+            name: "DynamicFramework",
+            url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/Archive.zip",
+            checksum: "721ec54e6d61681286039afc28e098ce7be20e9d41e26e7a07e627856f808352"
+        ),
+        .binaryTarget(
+                   name: "StaticLibrary",
+                   url: "https://github.com/shalehaha/spmbinary/releases/download/0.0.1/Archive.zip",
+                   checksum: "721ec54e6d61681286039afc28e098ce7be20e9d41e26e7a07e627856f808352"
+               )
     ]
 )
